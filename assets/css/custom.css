@@ -1,0 +1,318 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroSection{
+    /* background-image: url('../images/banner.jpg'); */
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.fw-900{
+    font-weight: 900;
+}
+.studioSection{
+    min-height: 100vh;
+    background-image: url('../images/studios/2.png');
+    background-size: cover;
+    width: 100%;
+    display: grid;
+}
+.btn-primary {
+    background-color: var(--black-opacity) !important;
+    padding: 25px 60px;
+    font-size: 30px;
+    border-radius: 0;
+}
+.btn-secondary{
+    background-color: var(--black-opacity) !important;
+    padding: 30px 70px;
+}
+.border{
+    border-radius: 0px;
+    border: 1px solid #fff !important;
+
+}
+.active{
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+.slider-container{
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+.fs-48{
+    font-size: 48px;
+}
+.fs-96{
+    font-size: 96px;
+}
+.clientSection{
+    min-height: 100vh;
+    display: grid;
+    width: 100%;
+    background-image: url(../images/client/client_bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+.serviceSection{
+    background-image: url(../images/servicesbg.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: bottom;
+}
+/* .clientSection ul li{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out !important;
+}
+.clientSection ul li:hover{
+    text-decoration: underline;
+} */
+
+.EngineerSection{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/engineer/engineer.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.booking{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/DSC05689.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus{
+    box-shadow: unset !important;
+}
+.column-4{
+    columns: 4 !important;
+}
+#footer{
+    background-color: var(--gray);
+}
+.black-op{
+    background-color: var(--black-secondary) !important;
+}
+.accordion-button:focus{
+    box-shadow: unset !important;
+}
+.height-500{
+    height: 500px;
+}
+.booking ul li{
+    line-height: 35px;
+}
+.opacity{
+    background-color: var(--black-opacity);
+    height: 100%;
+}
+.yellow-bg{
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+/* flip card */
+.bubble{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+}
+.bubble h2, .bubble p{
+    opacity: 0;
+}
+.bubble-hover:hover .bubble{
+    top: 0;
+    right: 0;
+    border-radius: 0px;
+    transition: 0.5s ease-in;
+    animation: bubble 0.5s linear 0.2s forwards; /* Use animation shorthand for clarity */
+}
+.bubble-hover:hover .bubble h2, .bubble-hover:hover .bubble p{
+    visibility: visible;
+    animation: bubble 0.5s linear 0.2s forwards; /* Use animation shorthand for clarity */
+}
+.line-height-50{
+    line-height: 50px;
+}
+.back{
+    display: contents;
+}
+
+.active-border .slick-list .slick-track .slick-current img{
+    box-shadow: 3px 3px var(--primary-color);
+    transform: scale(0.95);
+}
+@keyframes bubble {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+    10% {
+        width: 10%;
+        height: 10%;
+    }
+    20% {
+        width: 20%;
+        height: 20%;
+    }
+    30% {
+        width: 30%;
+        height: 30%;
+    }
+    40% {
+        width: 40%;
+        height: 40%;
+    }
+    50% {
+        width: 50%;
+        height: 50%;
+    }
+    60% {
+        width: 60%;
+        height: 60%;
+    }
+    70% {
+        width: 70%;
+        height: 70%;
+    }
+    80% {
+        width: 80%;
+        height: 80%;
+    }
+    90% {
+        width: 90%;
+        height: 90%;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+/* ends flip card  */
+
+.studioSlider .slick-arrow,
+.EngineerSection .slick-arrow{
+    display: none !important;
+}
+.popup{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background: #000000d4; */
+    z-index: 99999999999;
+}
+.popup-wrap{
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+body:has(.popup) {
+    overflow: hidden;
+}
+.slick-next, .slick-prev {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: unset;
+    height: unset;    
+}
+.slick-prev{
+    left: -50px !important;
+}
+.slick-next{
+    right: 0px !important;
+}
+.slick-next:before, .slick-prev:before {
+    font-family: auto !important;
+    font-size: 50px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.card-hover:hover img{
+    border: 2px solid var(--primary-color);
+    transition: .3s;
+    border-radius: 0 10px 0 10px;
+    filter: brightness(0.5);
+}
+.engineerScroll{
+    overflow-y: scroll;
+}
+.engineerScroll::-webkit-scrollbar {
+    display:none
+  }
+
+  .slider-wrap.studio .slick-arrow{
+    display: none !important;
+  }
+
+  .innerPage{
+    background-image: url(/assets/images/banner.jpg);
+    background-color: #282828;
+    background-blend-mode: overlay;
+  }
+
+  .engineer-cards-mobile .fs-md-15{
+    font-size: 12px !important;
+  }
+  .navbar .nav-item .text-white:hover {
+    color: var(--primary-color) !important;
+    transition: .3s;
+}
+.bottomSlider .slick-arrow,
+.bookingSlider button.slick-arrow{
+    display: none !important;
+  }
+.bottomSlider .btnLeft{
+    width: 50px;
+    left: -50px;
+}
+.bottomSlider .btnRight{
+    width: 50px;
+    right: -50px;
+}
+
+.navbar:has(.navbar-collapse.collapse.show){
+    background-color: #000000d4;
+    transition: .3s;
+}
+
+#Maps .slick-slide {
+    width: 85vw !important;
+    padding: 0 10px;
+}
+
+.pageNotFound .wrap{
+    background-image: url(../images/client/client_bg.jpg);
+    background-color: #242424;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pageNotFound .wrap h1{
+    font-size: 10vw;
+}

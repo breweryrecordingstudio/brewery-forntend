@@ -1,0 +1,174 @@
+@media (max-width:500px){
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-brand img{
+        width: 40px !important;
+    }
+    .navbar-brand h6{
+        font-size: 12px;
+    }
+    .navbar h5{
+        font-size: 12px;
+    }
+    .navbar p{
+        font-size: 10px;
+    }
+
+    .fs-120{
+        font-size: 70px !important;
+    }
+    .btn-primary{
+        font-size: 24px !important;
+    }
+    .studioSection button,
+    .EngineerSection button{
+        width: 100% !important;
+    }
+    .slider-container{
+        min-height: auto !important;
+    }
+    .slider-container h2.fs-120{
+        font-size: 30px !important;
+    }
+    .fs-96{
+        font-size: 25px !important;
+    }
+    .fs-48{
+        font-size: 30px;
+    }
+    .clientSection{
+        min-height: auto !important;
+    }
+    .clientSection .column-4{
+        columns: 3 !important;
+    }
+    .clientSection li{
+        font-size: 12px;
+    }
+    .clientSection h4.fs-48{
+        font-size: 30px;
+    }
+    .clientSection h6.fs-96{
+        font-size: 25px !important;
+    }
+
+    .serviceSection, .EngineerSection, .booking{
+        min-height: auto;
+    }
+    .line-height-50{
+        line-height: 1.5;
+    }
+
+    #booking ul{
+        width: 100%;
+    }
+    .fs-24 {
+        font-size: 18px;
+    }
+    .booking ul li {
+        line-height: 30px;
+    }
+    .fs-30 {
+        font-size: 16px;
+    }
+    .w-sm-50{
+        width: 50%;
+    }
+    .w-sm-100{
+        width: 100%;
+    }
+    #socials .w-75px{
+    width: 75px;
+    }
+    #socials .social_icon.w-75px{width: 50px;}
+    .bottomSlider .btnLeft{
+        width: 50px;
+        left: 0px;
+    }
+    .bottomSlider .btnRight{
+        width: 50px;
+        right: 0;
+    }
+    .EngineerSection .switchButtons button{
+            font-size: 14px !important;
+            width: 50% !important;
+            padding: 0;
+    }
+    .serviceSection button{
+        font-size: 12px !important;
+        padding: 10px !important;
+    }
+    .serviceSection h2.fs-20{
+        font-size: 16px !important;
+    }
+    .serviceSection img.w-100px{
+        width: 50px !important;
+    }
+    .serviceSection .servicePartial h2{font-size: 20px !important;}
+    .serviceSection .servicePartial *:not(h2){
+        font-size: 12px !important;
+    }
+    .serviceSection .servicePartial img{
+        width: 100% !important;
+    }
+    #Maps iframe{
+        height: 230px;
+    }
+    #tour p {
+        font-size: 12px !important;
+    }
+    #footer a {
+        font-size: 12px !important;
+    }
+    #socials h5 {
+        font-size: 14px;
+    }
+    .popup .popup-wrap.w-60{
+        width: 100% !important;
+    }
+    #engineers .popup h3.fs-48 {
+        font-size: 22px;
+    }
+    #engineers .popup h2.fs-96 {
+        font-size: 24px !important;
+    }
+    #engineers .popup h4.fs-24 {
+        font-size: 16px;
+    }
+    #engineers .popup p{font-size: 12px;}
+    #engineers .popup .img-wrap{
+        background-color: black;
+    }
+    #engineers .popup .img-wrap img{
+        object-position: 70%;
+        opacity: .4;
+    }
+    .w-115px{width: 115px !important;}
+    .hover-dark:hover img{
+        filter: none !important;
+        transition: .3s;
+      }
+}
+
+
+/* tablet  */
+
+@media (min-width:500px) and (max-width:992px) {
+    .slider-container{
+        min-height: auto !important;
+    }
+    .clientSection .column-4{
+        columns: 3 !important;
+    }
+    .clientSection, .serviceSection, .EngineerSection, .booking{
+        min-height: auto;
+    }
+    .btn-primary{
+        font-size: 24px !important;
+    }
+    #booking ul{
+        width: 100%;
+    }    
+}
